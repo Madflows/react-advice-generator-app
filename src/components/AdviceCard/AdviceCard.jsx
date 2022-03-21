@@ -12,6 +12,7 @@ import Dice from '../../images/icon-dice.svg';
 
 const AdviceCard = ({ quote, generateQuote }) => {
   const NeonGreen = 'hsl(150, 100%, 66%)';
+  const TextColor = useColorModeValue('#000','hsl(150, 100%, 66%)');
   const cardBg = useColorModeValue('gray.200', 'hsl(218, 23%, 16%)');
 
   return (
@@ -30,7 +31,7 @@ const AdviceCard = ({ quote, generateQuote }) => {
         fontWeight={'bold'}
         textTransform={'uppercase'}
         letterSpacing="1px"
-        color={NeonGreen}
+        color={TextColor}
       >
         {`Advice #${quote.id}`}
       </Text>
